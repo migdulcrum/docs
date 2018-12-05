@@ -5,7 +5,7 @@ title: "Forger"
 # Forger
 
 ::: tip
-You can find the source code of this package at [packages/core-forger](https://github.com/ArkEcosystem/core/tree/develop/packages/core-forger).
+You can find the source code of this package at [packages/core-forger](https://github.com/ArkEcosystem/core/tree/master/packages/core-forger).
 :::
 
 ## Installation

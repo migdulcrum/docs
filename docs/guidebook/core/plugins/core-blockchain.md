@@ -5,7 +5,7 @@ title: "Blockchain"
 # Blockchain
 
 ::: tip
-You can find the source code of this package at [packages/core-blockchain](https://github.com/ArkEcosystem/core/tree/develop/packages/core-blockchain).
+You can find the source code of this package at [packages/core-blockchain](https://github.com/ArkEcosystem/core/tree/master/packages/core-blockchain).
 :::
 
 ## Installation

@@ -6,7 +6,7 @@ Keep in mind that this data structure is kept consistent as much as possible for
 
 This is something to keep in mind when accessing these models through the Event API, for example, as the correct way to access information might be different than following the structure listed here. 
 
-Where possible, these discrepancies are noted below. The `transformers` directories in the `core-api` module help to paint a more complete picture; they can be found in their respective [v1](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/lib/versions/1/transformers) and [v2](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/lib/versions/2/transformers) repositories.
+Where possible, these discrepancies are noted below. The `transformers` directories in the `core-api` module help to paint a more complete picture; they can be found in their respective [v1](https://github.com/ArkEcosystem/core/tree/master/packages/core-api/lib/versions/1/transformers) and [v2](https://github.com/ArkEcosystem/core/tree/master/packages/core-api/lib/versions/2/transformers) repositories.
 
 ## Block
 

@@ -61,7 +61,7 @@ app
   .option('--network-start', 'force genesis network start', false)
   .action(async (options) => require('../lib/start-relay-and-forger')(options))
 ```
-For the sake of brevity, I've only included the `start` command here. Looking through the `[ark` file](https://github.com/ArkEcosystem/core/blob/develop/packages/core/bin/ark), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
+For the sake of brevity, I've only included the `start` command here. Looking through the `[ark` file](https://github.com/ArkEcosystem/core/blob/master/packages/core/bin/ark), however, reveals that these commands have closely linked functionality, similar to the npm scripts we inspected earlier.
 
 Breaking down what's happening here:
 
@@ -149,7 +149,7 @@ An immediate takeaway from this review is that, while functionality might differ
 
 We'll dive more into the mechanics of `core-container` in a future Guidebook chapter, but for now, suffice it to say that the `container` contains our plugins. It creates the proper environment for our plugins to run in, determines which plugins should be loaded, and loads them. 
 
-To illustrate this, let's look inside our container package. You can find the source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/container.js), or follow along below:
+To illustrate this, let's look inside our container package. You can find the source code [here](https://github.com/ArkEcosystem/core/blob/master/packages/core-container/lib/container.js), or follow along below:
 ```js
 // inside the Container class in container.js
 
@@ -207,7 +207,7 @@ Additionally, here is where we load any environment variables defined in our nod
 
 With the proper environment now setup, we can begin fleshing out our node's central capacities using plugins. We can see from our `Container.setUp` method that plugins are initialized using the `PluginRegistrar` and setup using the Registrar's `setUp` method.
 
-Using the snippets below or the source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/registrars/plugin.js), let's look at the constructor and `setUp` methods for `PluginRegistrar`:
+Using the snippets below or the source code [here](https://github.com/ArkEcosystem/core/blob/master/packages/core-container/lib/registrars/plugin.js), let's look at the constructor and `setUp` methods for `PluginRegistrar`:
 ```js
 module.exports = class PluginRegistrars {
   /**
@@ -264,7 +264,7 @@ This method effectively checks for the presence of a `plugins` file in our confi
 
 In the `PluginRegistrar.setUp` method, we loop through this plugins property and register each plugin into our container according to the settings set up in the preceding steps. 
 
-This is the step in our node's lifecycle where all of the node's most essential functions are loaded: from the Public API to the P2P API to the blockchain itself, all plugins are booted up upon their inclusion in the container through the plugin registrar. To get a sense of the order in which these plugins are loaded, we can look at the file that's returned by the `__loadPlugins` method. You can view the full source code [here](https://github.com/ArkEcosystem/core/blob/develop/packages/core/lib/config/devnet/plugins.js), but here's a snippet:
+This is the step in our node's lifecycle where all of the node's most essential functions are loaded: from the Public API to the P2P API to the blockchain itself, all plugins are booted up upon their inclusion in the container through the plugin registrar. To get a sense of the order in which these plugins are loaded, we can look at the file that's returned by the `__loadPlugins` method. You can view the full source code [here](https://github.com/ArkEcosystem/core/blob/master/packages/core/lib/config/devnet/plugins.js), but here's a snippet:
 ```js
 module.exports = {
   '@arkecosystem/core-event-emitter': {},
@@ -320,7 +320,7 @@ Typically, you should try to add your plugin to the bottom of this file, with on
 
 While the steps outlined above are enough to get our node up and running, there's one process we haven't looked at yet: the shutdown process. Typically you'll want your nodes to run forever so they can relay or forge as necessary. However, whether in preparation for an upgrade or to troubleshoot technical problems, sometimes you've got to shut everything down. 
 
-Fortunately, `core-container` registers a handler in its constructor that's designed to handle shutdowns in such a way as to not corrupt any data. Let's take a look at [this handler](https://github.com/ArkEcosystem/core/blob/develop/packages/core-container/lib/container.js#L117):
+Fortunately, `core-container` registers a handler in its constructor that's designed to handle shutdowns in such a way as to not corrupt any data. Let's take a look at [this handler](https://github.com/ArkEcosystem/core/blob/master/packages/core-container/lib/container.js#L117):
 ```js
 /**
 * Handle any exit signals.

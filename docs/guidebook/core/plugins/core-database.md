@@ -5,7 +5,7 @@ title: "Database - Interface"
 # Database - Interface
 
 ::: tip
-You can find the source code of this package at [packages/core-database](https://github.com/ArkEcosystem/core/tree/develop/packages/core-database).
+You can find the source code of this package at [packages/core-database](https://github.com/ArkEcosystem/core/tree/master/packages/core-database).
 :::
 
 ## Installation

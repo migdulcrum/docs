@@ -5,7 +5,7 @@ title: "Snapshots CLI"
 # Snapshots CLI
 
 ::: tip
-You can find the source code of this package at [packages/core-snapshots-cli](https://github.com/ArkEcosystem/core/tree/develop/packages/core-snapshots-cli).
+You can find the source code of this package at [packages/core-snapshots-cli](https://github.com/ArkEcosystem/core/tree/master/packages/core-snapshots-cli).
 :::
 
 # Purpose

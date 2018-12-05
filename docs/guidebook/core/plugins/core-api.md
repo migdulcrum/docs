@@ -5,7 +5,7 @@ title: "Public API"
 # Public API
 
 ::: tip
-You can find the source code of this package at [packages/core-api](https://github.com/ArkEcosystem/core/tree/develop/packages/core-api/).
+You can find the source code of this package at [packages/core-api](https://github.com/ArkEcosystem/core/tree/master/packages/core-api/).
 :::
 
 ## Installation

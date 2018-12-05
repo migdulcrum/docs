@@ -5,7 +5,7 @@ title: "Transaction Pool - Memory"
 # Transaction Pool - Memory
 
 ::: tip
-You can find the source code of this package at [packages/core-transaction-pool-mem](https://github.com/ArkEcosystem/core/tree/develop/packages/core-transaction-pool-mem).
+You can find the source code of this package at [packages/core-transaction-pool-mem](https://github.com/ArkEcosystem/core/tree/master/packages/core-transaction-pool-mem).
 :::
 
 ## Installation

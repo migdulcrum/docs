@@ -5,7 +5,7 @@ title: "Deployer"
 # Deployer
 
 ::: tip
-You can find the source code of this package at [packages/core-deployer](https://github.com/ArkEcosystem/core/tree/develop/packages/core-deployer).
+You can find the source code of this package at [packages/core-deployer](https://github.com/ArkEcosystem/core/tree/master/packages/core-deployer).
 :::
 
 ## Installation

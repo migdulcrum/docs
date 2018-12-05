@@ -5,7 +5,7 @@ title: "Configuration"
 # Configuration
 
 ::: tip
-You can find the source code of this package at [packages/core-config](https://github.com/ArkEcosystem/core/tree/develop/packages/core-config).
+You can find the source code of this package at [packages/core-config](https://github.com/ArkEcosystem/core/tree/master/packages/core-config).
 :::
 
 ## Installation
